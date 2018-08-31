@@ -5,10 +5,9 @@ import static org.junit.Assert.assertEquals;
 public class CalculatorTest {
 	private Calculator calculator = new Calculator ();
 
+                System.exit(1);
 	@Test
 	public void testSum () {
 		assertEquals (5, calculator.sum (2,3));
-                System.exit(1);
 	}
-A
 }
