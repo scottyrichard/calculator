@@ -3,7 +3,7 @@ package com.scottyrichard.calculator;
 import org.springframework.stereotype.Service;
 
 
-
+/** Calculator logic */
 @Service
 
 public class Calculator {
