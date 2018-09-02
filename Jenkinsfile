@@ -34,5 +34,12 @@ pipeline {
 			}
 		}
 	}
+	post {
+		always {
+			mail to: 'richard@nepoware.com',
+			subject: "Jenkins build pipeline: ${currentBuild.fullDisplayName}",
+			body: "Your build completed, please check: ${env.BUILD.URL}"
+		}
+	}
 }
 
